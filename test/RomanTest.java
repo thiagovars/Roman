@@ -18,4 +18,11 @@ public class RomanTest {
         assertEquals("V", roman);
     }
 
+    @Test
+    public void TestReturnIWhenReceive1(){
+        Roman arabic = new Roman();
+        String roman = arabic.toRoman(5);
+        assertEquals("I", roman);
+    }
+
 }

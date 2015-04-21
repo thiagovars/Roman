@@ -10,15 +10,12 @@ public class Roman {
         int index = 0;
         int arabic = indexArabic[0];
         // find index
-        while (arabic <= number) {
+        while (arabic > number) {
             index++;
             arabic = indexArabic[index];
         }
 
-        while (number > indexArabic[index]) {
-            result += indexRomans[index];
-            number -= indexArabic[index];
-        }
+        result += indexRomans[index];
 
         return result;
     }
